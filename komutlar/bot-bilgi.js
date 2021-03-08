@@ -12,21 +12,27 @@ exports.run = async (bot, message, args) => {
   
   const istatistikler = new Discord.MessageEmbed()
   
-  .setColor('BLACK')
+  .setColor('ORANGE')
   
-  .setFooter('Bot İsmi', bot.user.avatarURL)
+
   
-  .addField("» **Botun Sahibi**", "<@201016292885397504>")
-  .addField("» **Bellek kullanımı**", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + ' MB', true)  
-  .addField("» **Çalışma süresi**", seksizaman)
-  .addField("» **Kullanıcılar**" , bot.guilds.cache.reduce((a, b) => a + b.memberCount, 0).toLocaleString(), true)
-  .addField("» **Discord.JS sürüm**", "v"+Discord.version, true)
-  .addField("» **Node.JS sürüm**", `${process.version}`, true)
-  .addField("» **CPU**", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
-  .addField("» **Bit**", `\`${os.arch()}\``, true)
-  .addField("» **İşletim Sistemi**", `\`\`${os.platform()}\`\``) 
-  .addField("**» Bot Davet**", " [Davet Et](BOT DAVET LİNKİ)", )
-  .addField("**» Destek Sunucusu**", " [Sunucumuza Katıl](DESTEK SUNUCUSU)", )
+
+  
+  .addField("`Language Program`",  `**Java Script**`, true)
+  
+   .addField("`my name`", `**Scour Gif#1257**`, true)
+  
+  .addField("`My ID`",  `**778276774320275487**`, true)
+  
+  .addField( "`My Prefix` ",`**.**`,true)
+  
+  .addField("**About Memory**", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + ' MB', true)  
+  
+  .addField("**Discord.JS**", "v"+Discord.version, true)
+  
+  .addField("**Node.JS**", `${process.version}`, true)
+  
+  .addField("**developer bot**", "<@681553671364018196>")
   
   return message.channel.send(istatistikler);
   };
@@ -39,7 +45,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "istatistik",
+  name: "bot",
   description: "lrowsxrd",
-  usage: "istatistik"
+  usage: "jfkdjkj"
 };
