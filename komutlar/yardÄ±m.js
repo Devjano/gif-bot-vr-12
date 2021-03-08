@@ -8,23 +8,17 @@ exports.run = async (client, message, args, msg) => {
 const embed = new Discord.MessageEmbed()
     
 .setColor('BLACK') 
-.addField(`**help commands bot gif**`,
+.addField(`**help commands**`,
           
  `
-**| $paly | $stop | $skip | $skipto | $volume |**
-**| $queue | $loop | $pause | $nowplaying |**
-**| $shuffle | $uptime | $search | $remove |**
-**| $clip | $clips | $lyrics | $move | $playlist |**
+**| .girl | .man | .couple | .baby | .anime | .animal |**
+
 
 **Info Command**
 
-**| $bot | $support | $invite | $help |$ping |**
+**| .bot | .avatar | .help | .ping |**
 
-**Music Easy Commands**
-**| $p | $s | $sk | $st | $v | $q | $l | $pa | $np |**
-**| $sh | $u | $se | $rm | $r | $ms | $b | $sp |**
-**| $c | $cl | $pl | $mv | $ly | $add | $h |**
-     
+    
 **[ invite ]**
 **[ click here ](https://discord.com/api/oauth2/authorize?client_id=778276774320275487&permissions=8&scope=bot)** 
 **[ support ]**
@@ -41,7 +35,7 @@ permLevel: 0
 };
 
 exports.help = {
-  name: 'h',
+  name: '',
   description: 'help bot',
   usage: 'dev jano'
 };
